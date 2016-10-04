@@ -2,15 +2,13 @@
 
 {{#each commitGroups}}
 
-{{#if title}}
+{{~#if title}}
 ### {{title}}
 
 {{/if}}
-{{#each commits}}
+{{~#each commits}}
 {{> commit root=@root}}
 {{/each}}
 
 {{/each}}
 {{> footer}}
-
-
