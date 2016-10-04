@@ -67,6 +67,7 @@ var writerOpts = {
       commit.type = 'Chores';
     } else if (discard) {
       return;
+    }
 
     if (commit.scope === '*') {
       commit.scope = '';
@@ -102,7 +103,6 @@ var writerOpts = {
     return commit;
   },
   groupBy: 'type',
-  commitGroupsSort: 
   commitGroupsSort: function(group1, group2) {
     if (group1.title === 'BREAKING CHANGES') {
       return -1;
