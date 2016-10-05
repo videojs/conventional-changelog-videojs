@@ -11,7 +11,7 @@ See [convention](convention.md)
 
 [npm-image]: https://badge.fury.io/js/conventional-changelog-videojs.svg
 [npm-url]: https://npmjs.org/package/conventional-changelog-videojs
-[travis-image]: https://travis-ci.org/videojs/conventional-changelog-video.js.svg?branch=master
+[travis-image]: https://travis-ci.org/videojs/conventional-changelog-videojs.svg?branch=master
 [travis-url]: https://travis-ci.org/videojs/conventional-changelog-videojs
 [daviddm-image]: https://david-dm.org/videojs/conventional-changelog-videojs.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/videojs/conventional-changelog-videojs
