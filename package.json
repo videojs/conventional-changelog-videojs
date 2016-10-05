@@ -6,7 +6,8 @@
   "scripts": {
     "coverage": "istanbul cover -x test.js _mocha -- -R spec --timeout 30000 && rm -rf ./coverage",
     "lint": "jshint *.js --exclude node_modules && jscs *.js",
-    "test": "mocha --timeout 30000 && npm run-script lint"
+    "pretest": "npm run lint",
+    "test": "mocha --timeout 30000"
   },
   "repository": {
     "type": "git",
