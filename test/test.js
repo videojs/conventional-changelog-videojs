@@ -50,7 +50,7 @@ betterThanBefore.setups([
   }
 ]);
 
-describe('angular preset', function() {
+describe('videojs preset', function() {
   it('should work if there is no semver tag', function(done) {
     preparing(1);
 
@@ -66,7 +66,7 @@ describe('angular preset', function() {
         expect(chunk).to.include('amazing new module');
         expect(chunk).to.include('**compile:** avoid a bug');
         expect(chunk).to.include('make it faster');
-        expect(chunk).to.include(', closes [#1](https://github.com/conventional-changelog/conventional-changelog-angular/issues/1) [#2](https://github.com/conventional-changelog/conventional-changelog-angular/issues/2)');
+        expect(chunk).to.include(', closes [#1](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/1) [#2](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/2)');
         expect(chunk).to.include('Not backward compatible.');
         expect(chunk).to.include('**compile:** The Change is huge.');
         expect(chunk).to.include('Features');
@@ -75,8 +75,8 @@ describe('angular preset', function() {
         expect(chunk).to.include('Reverts');
         expect(chunk).to.include('bad commit');
         expect(chunk).to.include('BREAKING CHANGES');
+        expect(chunk).to.include('first commit');
 
-        expect(chunk).to.not.include('first commit');
         expect(chunk).to.not.include('feat');
         expect(chunk).to.not.include('fix');
         expect(chunk).to.not.include('perf');
@@ -99,7 +99,7 @@ describe('angular preset', function() {
       })
       .pipe(through(function(chunk) {
         chunk = chunk.toString();
-        expect(chunk).to.include('[#133](https://github.com/conventional-changelog/conventional-changelog-angular/issues/133)');
+        expect(chunk).to.include('[#133](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/133)');
         done();
       }));
   });
@@ -115,8 +115,8 @@ describe('angular preset', function() {
       })
       .pipe(through(function(chunk) {
         chunk = chunk.toString();
-        expect(chunk).to.include('[#88](https://github.com/conventional-changelog/conventional-changelog-angular/issues/88)');
-        expect(chunk).to.not.include('closes [#88](https://github.com/conventional-changelog/conventional-changelog-angular/issues/88)');
+        expect(chunk).to.include('[#88](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/88)');
+        expect(chunk).to.not.include('closes [#88](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/88)');
         done();
       }));
   });
