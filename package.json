@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-videojs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "conventional-changelog videojs preset",
   "main": "index.js",
   "scripts": {
