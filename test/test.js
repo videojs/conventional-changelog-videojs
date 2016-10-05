@@ -50,7 +50,7 @@ betterThanBefore.setups([
   }
 ]);
 
-describe('angular preset', function() {
+describe('videojs preset', function() {
   it('should work if there is no semver tag', function(done) {
     preparing(1);
 
@@ -99,7 +99,7 @@ describe('angular preset', function() {
       })
       .pipe(through(function(chunk) {
         chunk = chunk.toString();
-        expect(chunk).to.include('[#133](https://github.com/conventional-changelog/conventional-changelog-angular/issues/133)');
+        expect(chunk).to.include('[#133](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/133)');
         done();
       }));
   });
@@ -115,8 +115,8 @@ describe('angular preset', function() {
       })
       .pipe(through(function(chunk) {
         chunk = chunk.toString();
-        expect(chunk).to.include('[#88](https://github.com/conventional-changelog/conventional-changelog-angular/issues/88)');
-        expect(chunk).to.not.include('closes [#88](https://github.com/conventional-changelog/conventional-changelog-angular/issues/88)');
+        expect(chunk).to.include('[#88](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/88)');
+        expect(chunk).to.not.include('closes [#88](https://github.com/conventional-changelog/conventional-changelog-videojs/issues/88)');
         done();
       }));
   });
