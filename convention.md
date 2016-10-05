@@ -50,10 +50,21 @@ If the commit reverts a previous commit, it should begin with `revert: `, follow
 
 ### Type
 
-If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. However if there is any [BREAKING CHANGE](#footer), the commit will always appear in the changelog.
+Support types are:
+* `feat`: Feature
+* `fix`: Bug Fixes
+* `perf`: Performance Improvements
+* `revert`: Reverts
+* `docs`: Documentation
+* `style`: Styles
+* `refactor`: Code Refactoring
+* `test`: Tests
+* `chore`: Chores
 
-Other prefixes are up to your discretion. Suggested prefixes are `docs`, `chore`, `style`, `refactor`, and `test` for non-changelog related tasks.
+Only these types will appear in the changelog. However if there is any [BREAKING CHANGE](#footer), the commit will always appear in the changelog.
+These types are sorted by BREAKING CHANGE, Features, Bug Fixes showing up first for each group followed by the other types sorted alphabetically.
 
+Other prefixes are up to your discretion and will not appear in the changelog by default.
 ### Scope
 
 The scope could be anything specifying place of the commit change. For example `$location`,
