@@ -104,25 +104,15 @@ var writerOpts = {
   },
   groupBy: 'type',
   commitGroupsSort: function(group1, group2) {
-    if (group1.title === 'BREAKING CHANGES') {
-      return -1;
-    }
-    if (group2.title === 'BREAKING CHANGES') {
-      return 1;
-    }
+    var priority = ['BREAKING CHANGES', 'Features', 'Bug Fixes'];
 
-    if (group1.title === 'Features') {
-      return -1;
-    }
-    if (group2.title === 'Features') {
-      return 1;
-    }
-
-    if (group1.title === 'Bux Fixes') {
-      return -1;
-    }
-    if (group2.title === 'Bug Fixes') {
-      return 1;
+    for (var i = 0; i < priority.length; i++) {
+      if (group1.title === priority[i]) {
+        return -1;
+      }
+      if (group2.title === priority[i]) {
+        return 1;
+      }
     }
 
     if (group1.title < group2.title) {
