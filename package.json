@@ -26,15 +26,15 @@
   "homepage": "https://github.com/conventional-changelog/conventional-changelog-videojs#readme",
   "devDependencies": {
     "better-than-before": "^1.0.0",
-    "chai": "^3.4.1",
-    "conventional-changelog-core": "^1.0.1",
-    "coveralls": "^2.11.6",
+    "chai": "^4.1.2",
+    "conventional-changelog-core": "^2.0.4",
+    "coveralls": "^3.0.0",
     "git-dummy-commit": "^1.1.1",
     "istanbul": "^0.4.1",
     "jscs": "^3.0.7",
     "jshint": "^2.9.1",
     "mocha": "*",
-    "shelljs": "^0.7.3",
+    "shelljs": "^0.8.1",
     "through2": "^2.0.0"
   },
   "dependencies": {

@@ -1,5 +1,7 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/videojs/conventional-changelog-videojs.svg)](https://greenkeeper.io/)
+
 > [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) [videojs](https://github.com/videojs/video.js) preset
 
 This is based on the [angular preset](https://github.com/conventional-changelog/conventional-changelog-angular). The main difference is that instead of only allowing `feat`, `fix`, and `perf` in the changelog, everything shows up but the important parts (breaking changes, features, bug fixes) are sorted first.
