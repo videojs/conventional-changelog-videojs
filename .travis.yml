@@ -4,6 +4,7 @@ node_js:
   - '5'
   - '4'
   - '0.12'
+  - '10'
 before_script:
   - git config --global user.name 'Travis-CI'
   - git config --global user.email 'dummy@example.org'
