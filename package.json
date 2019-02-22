@@ -28,7 +28,7 @@
     "better-than-before": "^1.0.0",
     "chai": "^3.4.1",
     "conventional-changelog-core": "^1.0.1",
-    "coveralls": "^2.11.6",
+    "coveralls": "^3.0.3",
     "git-dummy-commit": "^1.1.1",
     "istanbul": "^0.4.1",
     "jscs": "^3.0.7",
